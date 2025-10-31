@@ -1,1 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   margin: 300px;
+}
+.clock{
+    font-size: 100px;
+    padding: 20px;
+  border: 4px solid transparent;
+  border-radius: 40px;
+  border-image: linear-gradient(to bottom right, rgba(2,99,225,1), rgba(235,24,54,1)) 1;
+}
 
