@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 250px auto;
+}
+
+.container h1{
+    font-size: 30px;
+    background-color: rgb(45, 106, 144);
+    padding: 0px 500px;
+    color: #fff;
+}
+
+.counter-design{
+    font-size: 15px;
+    background-color: #ECF0F1;
+    padding: 0px 600px;
+    color: #000;
+}
+
+#todo-field{
+    border-top: 0px white;
+    border-left: 0px white;
+    border-right: 0px white;
+    border-bottom: 0.5px solid rgb(66, 66, 66);
+    width: 400px;
+}
+
+.add-task{
+    width: 100px;
+    height: 40px;
+}
+.todo-items{
+    justify-content: start;
+}
+
+#list { list-style: none; padding: 0; margin: 0; }
+#list li { padding: 8px 0; border-bottom: 1px solid #e3e3e3; }
+label { display: flex; gap: 10px; align-items: center; }
+
+
+
+.completed .todo-text {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.removed-items{
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+
+.edit-input {
+  font: inherit;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
