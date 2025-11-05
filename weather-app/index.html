@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="weather-app">
+  <div class="weather-top">
+    <div id="city">Loading...</div>
+    <div id="icon"></div>
+  </div>
+
+  <h1 id="headline">...</h1>
+  <p id="desc-line">You should go outside to confirm.</p>
+
+  <div class="weather-bottom">
+    <div>
+      <p class="label">Be prepared for the weather</p>
+    </div>
+    <div id="temp" class="time-like">--°C</div>
+  </div>
+
+  <form id="city-form">
+    <input id="city-input" placeholder="Type city and hit Enter" />
+  </form>
+</div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
