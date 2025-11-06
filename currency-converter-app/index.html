@@ -7,7 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="ccard">
+  <h2>Currency Converter</h2>
+
+  <label>
+    Amount
+    <input id="amount" type="number" value="1" min="0" step="0.01" />
+  </label>
+
+  <div class="row">
+    <label>
+      From
+      <select id="from-currency"></select>
+    </label>
+
+    <label>
+      To
+      <select id="to-currency"></select>
+    </label>
+  </div>
+
+  <p id="rate-line">Rate: --</p>
+  <h3 id="result">= --</h3>
+</div>
+
     <script src="script.js"></script>
 </body>
 </html>
