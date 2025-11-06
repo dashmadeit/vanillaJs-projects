@@ -1,8 +1,6 @@
-// const API_KEY = '1adc581bb1fcbe756a43386105271b92';
-
 async function getWeather(city) {
   const url =
-    `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent('Lagos')}&units=metric&appid=${'1adc581bb1fcbe756a43386105271b92'}`;
+    `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&units=metric&appid=${'1adc581bb1fcbe756a43386105271b92'}`;
 
   const res = await fetch(url);
   const data = await res.json();     // read body anyway
@@ -21,8 +19,7 @@ const cityEl = document.getElementById('city');
 const tempEl = document.getElementById('temp');
 const headlineEl = document.getElementById('headline');
 const iconEl = document.getElementById('icon');
-const form = document.getElementById('city-form');
-const input = document.getElementById('city-input');
+
 
 
 function updateUI(data) {
@@ -64,7 +61,8 @@ async function loadCity(city) {
 // initial load
 loadCity('Lagos');
 
-
+const form = document.getElementById('city-form');
+const input = document.getElementById('city-input');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
